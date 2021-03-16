@@ -19,7 +19,7 @@
 	<body>
 
 	<?php
-	        $pdo = new PDO('mysql:dbname=a17towan_examensarbete;host=wwwlab.iit.his.se', 'sqllab', 'Tomten2009');
+	        $pdo = new PDO('mysql:dbname=a17towan_examensarbete;host=wwwlab.iit.his.se;', 'sqllab', 'Tomten2009');
 	        $pdo->exec("SET CHARACTER SET 'utf8'");
 
 	        //SQL FRÅGA
