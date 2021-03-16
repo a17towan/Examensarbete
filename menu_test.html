@@ -1,0 +1,139 @@
+<!Doctype HTML>
+<html lang="sv">
+<head>
+    <meta charset=utf-8>
+    <title>mobile menu test</title>
+    <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!--   --<script src="menu_js.js"></script>-->
+
+</head>
+<body>
+    <div class="navtop">  
+        <h1 class="brand">Bakerie</h1>
+    </div>
+    <div class="navbottom">
+      <ul class="navbar">
+            <div class="hey"></div>
+            <div class="hey"></div>
+            <div class="hey"></div>
+        </ul>
+    </div>
+    <div class="menu">
+        <ul>
+            <li class="rootMenu">Om oss</li>
+            <li class="rootMenu">Kontakt</li>
+            <li class="rootMenu" id="startMenu"><span class="caret">Sortiment</span>
+                <ul class="nested">
+                    <li><span class="caret">Bröd</span>
+                        <ul class="nested">
+                            <li>Ljust bröd</li>
+                            <li>Mörkt bröd</li>
+                        </ul>
+                    </li>
+                    <li><span class="caret">Tårtor</span>
+                        <ul class="nested">
+                            <li><span class="caret">Cupcakes</span>
+                                <ul class="nested">
+                                    <li>Jordgubb</li>
+                                    <li>Blåbär</li>
+                                    <li>Vanilj</li>
+                                </ul>
+                            </li>
+                            <li><span class="caret">Gräddtårtor</span>
+                                <ul class="nested">
+                                    <li>Jordgubb</li>
+                                    <li>Blåbär</li>
+                                    <li>Päron</li>
+                                </ul>
+                            </li>
+                            <li><span class="caret">Glasstårtor</span>
+                                <ul class="nested">
+                                    <li>Jordgubb</li>
+                                    <li>Blåbär</li>
+                                    <li>Vanilj</li>
+                                </ul>
+                            </li>
+                            <li><span class="caret">Tårtor med tema</span>
+                                <ul class="nested">
+                                    <li>Prinsessa</li>
+                                    <li>Superhjälte</li>
+                                    <li>Ansiktstårta</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><span class="caret">Dryck</span>
+                        <ul class="nested">
+                            <li><span class="caret">Varm dryck</span>
+                                <ul class="nested">
+                                    <li>Varm choklad</li>
+                                    <li>Kaffe</li>
+                                </ul>
+                            </li>
+                            <li><span class="caret">Kall dryck</span>
+                                <ul class="nested">
+                                    <li>Isté</li>
+                                    <li>Saft</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <!-- Home page -->
+     <div id="hemSida" class="ark">
+     	<!-- Test form -->
+     	<form action="menu_test.html" class="box1" id="form" style="display:none;">
+     		<label for="number">Number:</label><br>
+     		<input type="number" name="deltagareID" id="deltagareID" minlength="1" maxlength="1" required><br>
+     		<label for="number">Number:</label><br>
+     		<input type="number" name="test1" id="test1" minlength="1" maxlength="1" required>
+     		<button type="sumbit" form="form" id="sumbit" value="Sumbit">Submit</button>
+     	</form>
+        <div class="box1">
+        	<img class="placeholder" src="placeholder.svg">
+        </div>
+        <div class="box2">
+        	 <img class="placeholder" src="placeholder.svg">
+        </div>
+        <div class="box3">
+        	 <img class="placeholder" src="placeholder.svg">
+        </div>
+
+    </div>
+    <!-- About Us page -->
+    <div id="omOssSida" class="ark">
+        <div class="box0">
+            <h3>Om oss</h3>
+        </div>
+        <div class="box1">
+            <img class="placeholder" src="placeholder.svg">
+        </div>
+        <div class="box2">
+             <img class="placeholder" src="placeholder.svg">
+        </div>
+        <div class="box3">
+             <img class="placeholder" src="placeholder.svg">
+        </div>
+    </div>
+    <!-- Contact page -->
+    <div id="kontaktSida" class="ark">
+        <div class="box0">
+            <h3>Kontakta oss</h3>
+        </div>
+        <div class="box1">
+            <img class="placeholder" src="placeholder.svg">
+        </div>
+        <div class="box2">
+             <img class="placeholder" src="placeholder.svg">
+        </div>
+        <div class="box3">
+             <img class="placeholder" src="placeholder.svg">
+        </div>
+    </div>
+    <script src="menu_js.js"></script>
+</body>
+</html>
