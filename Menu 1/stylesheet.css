@@ -36,7 +36,7 @@ body{
     padding:10px;
     background-color:white;
     box-shadow: 2px 2px 10px black;
-    box-shadow-top:none;
+    /*box-shadow-top:none;*/
 }
 
 .hey{

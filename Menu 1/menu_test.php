@@ -19,8 +19,14 @@
 	<body>
 
 	<?php
-	        $pdo = new PDO('mysql:dbname=a17towan_examensarbete;host=wwwlab.iit.his.se;', 'sqllab', 'Tomten2009');
+	        $pdo = new PDO('mysql:host=wwwlab.iit.his.se:3306;dbname=a17towan_examensarbete', 'sqllab', 'Tomten2009');
 	        $pdo->exec("SET CHARACTER SET 'utf8'");
+
+			if($db->connect_error) {
+				echo $db->connect_errno . " " . $db->connect_error;
+			} else {
+				echo "Connection successful.";
+			}
 
 	        //SQL FRÅGA
 	        $sql = "Select deltagareID From test1";
