@@ -1,0 +1,150 @@
+* {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+html{
+    height:100%;
+}
+
+body{
+    height: 100%;
+    background-color: #FFBECE;
+    margin:0px;
+    overflow:hidden;
+}
+
+.navtop{
+    height:6%;
+    margin:0;
+    padding: 10px;
+    background-color:white;
+    border-bottom:1px solid grey;
+    position:relative;
+/*    box-shadow: 2px 2px 10px black;*/}
+
+.brand{
+    font-size:80px;
+    margin:0;
+}
+
+.placeholder{
+    width:100%;
+}
+.navbottom{
+    height:4%;
+    margin:0;
+    padding:10px;
+    background-color:white;
+    box-shadow: 2px 2px 10px black;
+    /*box-shadow-top:none;*/
+}
+
+.hey{
+    width:55px;
+    height: 10px;
+    background-color:grey;
+    margin: 10px 0;
+}
+.navbar{
+    margin:0;
+    list-style-type:none;
+    overflow:hidden;
+    width:10%;
+/*    float:right;*/
+}
+
+.navlist{
+    float:left;
+}
+
+.menu{
+    background-color:white;
+    height: 80%;
+    width: 70%;
+    border: 3px solid grey;
+    z-index:1;
+    position: absolute;
+    display:none;
+    top:12.3%;
+    border-top:none;
+    border-left:none;
+    box-shadow: 2px 2px 10px black;
+    overflow:scroll;
+}
+
+#ark.omOss .kontakt{
+    display:none;
+}
+
+.ark{
+    background-color: white;
+    margin:30px;
+    height:90%;
+    padding:10px;
+    box-shadow: 2px 2px 10px black;
+    position:absolute;
+    width: 92%;
+    overflow:scroll;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap:wrap;
+}
+
+.ark div{
+    border:1px #ccc solid;
+    padding:10px;
+    height:fit-content;
+}
+
+.box0{
+    flex-basis:100%;
+}
+.box1{
+    /*flex:1;
+    order:2;*/
+    flex-basis:70%;
+}
+.box2{
+    /*flex:1;
+    order:1;*/
+    flex-basis:70%;
+}
+.box3{
+    /*flex:1;
+    order:3;*/
+    flex-basis:70%;
+}
+
+
+.menu ul li:active{
+    background-color:white;
+}
+
+.borderDiv{
+    border-left:1px solid black;
+    border-bottom:1px solid black;
+    float:left;
+    width: 6%;
+    height:80px;
+}
+
+h3{
+    font-size:60px;
+}
+p{
+    font-size:50px;
+}
+
+label{
+    font-size:50px;
+}
+input{
+    font-size:50px;
+    border:5px solid magenta;
+    border-radius: 12px;
+}
+button{
+    width:50%;
+    height:100px;
+    font-size:50px;
+}
