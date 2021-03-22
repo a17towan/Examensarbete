@@ -27,6 +27,6 @@ document.getElementById("hotChild").style="display:none";
 
 // Test the menu 'sortiment'
 $(document).on('click', '#products',(function(){
-  $("#menuChild").slideToggle("fast");
-    console.log("yo");
+  //$("#menuChild").slide("right");
+  $("#menuChild").effect('slide', { direction:'right'}, 500);
 }));
