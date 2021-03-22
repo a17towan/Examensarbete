@@ -78,6 +78,7 @@ body{
 }
 #products{
     list-style-type: disclosure-closed;
+    list-style-position: inside;
 }
 
 
