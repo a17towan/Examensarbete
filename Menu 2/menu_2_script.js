@@ -5,7 +5,7 @@ $( document ).ready(function() {
 });
 
 $(document).on('click', '.navbar',(function(){
-  $(".menu").slideToggle("fast");
+  $("#menu").slideToggle("fast");
     console.log("yo");
 }));
 
@@ -13,7 +13,7 @@ $(document).on('click', '.navbar',(function(){
 document.getElementById("omOssSida").style="display:none";
 document.getElementById("kontaktSida").style="display:none";
 
-//Hide nested categories
+// Hide nested categories
 document.getElementById("menuChild").style="display:none";
 document.getElementById("menuChildBread").style="display:none";
 document.getElementById("menuChildCake").style="display:none";
@@ -24,3 +24,9 @@ document.getElementById("iceChild").style="display:none";
 document.getElementById("themeChild").style="display:none";
 document.getElementById("coldChild").style="display:none";
 document.getElementById("hotChild").style="display:none";
+
+// Test the menu 'sortiment'
+$(document).on('click', '#products',(function(){
+  $("#menuChild").slideToggle("fast");
+    console.log("yo");
+}));
