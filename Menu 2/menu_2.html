@@ -22,81 +22,84 @@
     </div>
     <!-- The ground level of submenus -->
     <div class="menu" id="menu">
-        <ul class="menu_list">
-            <li class="item" id="about">Om oss</li>
-            <li class="item" id="contact">Kontakt</li>
-            <li class="item" id="products">Sortiment</li>
-        </ul>
+        <div class="menuDiv">
+            <ul class="menu_list" id="menuParent">
+                <li class="item" id="about">Om oss</li>
+                <li class="item" id="contact">Kontakt</li>
+                <li class="item" id="products">Sortiment</li>
+            </ul>
+        </div>
+        <!-- The first level of submenus -->
+        <div class="menuDiv">
+            <ul class="menu_list" id="menuChild">
+                <li class="item" id="bread">Bröd</li>
+                <li class="item" id="cakes">Tårtor</li>
+                <li class="item" id="drinks">Dryck</li>
+            </ul>
+        </div>
+        <div class="menuDiv">
+            <ul class="menu_list"  id="menuChildBread">
+                <li class="item" id="lightBread">Ljust bröd</li>
+                <li class="item" id="darkBread">Mörkt bröd</li>
+            </ul>
+        </div>
+        <div class="menuDiv">
+            <ul class="menu_list" id="menuChildCake">
+                <li class="item" id="cupcakes">Cupcakes</li>
+                <li class="item" id="creamcakes">Gräddtårtor</li>
+                <li class="item" id="icecreamcakes">Glasstårtor</li>
+                <li class="item" id="themeCake">Tårtor med tema</li>
+            </ul>
+        </div>
+        <div class="menuDiv">
+            <ul class="menu_list"  id="menuChildDrink">
+                <li class="item" id="coldDrinks">Kalla drycker</li>
+                <li class="item" id="hotDrinks">Varma drycker</li>
+            </ul>
+        </div>
+        <!-- The second level of submenus -->
+        <div class="menuDiv">
+            <ul class="menu_list"  id="cupcakesChild">
+                <li class="item" id="strawberryCup">Jordgubb</li>
+                <li class="item" id="blueberryCup">Blåbär</li>
+                <li class="item" id="vanillaCup">Vanilj</li>
+            </ul>
+        </div>
+        <div class="menuDiv">
+            <ul class="menu_list"  id="creamChild">
+                <li class="item" id="strawberryCr">Jordgubb</li>
+                <li class="item" id="blueberryCr">Blåbär</li>
+                <li class="item" id="pearCre">Päron</li>
+            </ul>
+        </div>
+        <div class="menuDiv">
+            <ul class="menu_list"  id="iceChild">
+                <li class="item" id="strawberryIce">Jordgubb</li>
+                <li class="item" id="blueberryIce">Blåbär</li>
+                <li class="item" id="pearIce">Päron</li>
+            </ul>
+        </div>
+        <div class="menuDiv">
+            <ul class="menu_list"  id="themeChild">
+                <li class="item" id="princess">Prinsessor</li>
+                <li class="item" id="superHero">Superhjältar</li>
+                <li class="item" id="face">Ansiktstårta</li>
+            </ul>
+        </div>
+        <div class="menuDiv">
+            <ul class="menu_list"  id="coldChild">
+                <li class="item" id="iceTea">Isté</li>
+                <li class="item" id="lemonade">Saft</li>
+            </ul>
+        </div>
+        <div class="menuDiv">
+            <ul class="menu_list" id="hotChild">
+                <li class="item" id="chocolate">Varm choklad</li>
+                <li class="item" id="coffee">Kaffe</li>
+            </ul>
+        </div>
     </div>
-    <!-- The first level of submenus -->
-    <div class="menu" id="menuChild">
-        <ul class="menu_list">
-            <li class="item" id="bread">Bröd</li>
-            <li class="item" id="cakes">Tårtor</li>
-            <li class="item" id="drinks">Dryck</li>
-        </ul>
-    </div>
-    <div class="menu" id="menuChildBread">
-        <ul class="menu_list">
-            <li class="item" id="lightBread">Ljust bröd</li>
-            <li class="item" id="darkBread">Mörkt bröd</li>
-        </ul>
-    </div>
-    <div class="menu" id="menuChildCake">
-        <ul class="menu_list">
-            <li class="item" id="cupcakes">Cupcakes</li>
-            <li class="item" id="creamcakes">Gräddtårtor</li>
-            <li class="item" id="icecreamcakes">Glasstårtor</li>
-            <li class="item" id="themeCake">Tårtor med tema</li>
-        </ul>
-    </div>
-    <div class="menu" id="menuChildDrink">
-        <ul class="menu_list">
-            <li class="item" id="coldDrinks">Kalla drycker</li>
-            <li class="item" id="hotDrinks">Varma drycker</li>
-        </ul>
-    </div>
-    <!-- The second level of submenus -->
-    <div class="menu" id="cupcakesChild">
-        <ul class="menu_list">
-            <li class="item" id="strawberryCup">Jordgubb</li>
-            <li class="item" id="blueberryCup">Blåbär</li>
-            <li class="item" id="vanillaCup">Vanilj</li>
-        </ul>
-    </div>
-    <div class="menu" id="creamChild">
-        <ul class="menu_list">
-            <li class="item" id="strawberryCr">Jordgubb</li>
-            <li class="item" id="blueberryCr">Blåbär</li>
-            <li class="item" id="pearCre">Päron</li>
-        </ul>
-    </div>
-    <div class="menu" id="iceChild">
-        <ul class="menu_list">
-            <li class="item" id="strawberryIce">Jordgubb</li>
-            <li class="item" id="blueberryIce">Blåbär</li>
-            <li class="item" id="pearIce">Päron</li>
-        </ul>
-    </div>
-    <div class="menu" id="themeChild">
-        <ul class="menu_list">
-            <li class="item" id="princess">Prinsessor</li>
-            <li class="item" id="superHero">Superhjältar</li>
-            <li class="item" id="face">Ansiktstårta</li>
-        </ul>
-    </div>
-    <div class="menu" id="coldChild">
-        <ul class="menu_list">
-            <li class="item" id="iceTea">Isté</li>
-            <li class="item" id="lemonade">Saft</li>
-        </ul>
-    </div>
-    <div class="menu" id="hotChild">
-        <ul class="menu_list">
-            <li class="item" id="chocolate">Varm choklad</li>
-            <li class="item" id="coffee">Kaffe</li>
-        </ul>
-    </div>
+    <!-- End menu -->
     <!-- Home page -->
      <div id="hemSida" class="ark">
         <div class="box1">
@@ -110,6 +113,8 @@
         </div>
 
     </div>
+</div>
+
     <!-- About Us page -->
     <div id="omOssSida" class="ark">
         <div class="box0">

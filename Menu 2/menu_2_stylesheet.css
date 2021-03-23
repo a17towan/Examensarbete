@@ -59,7 +59,7 @@ body{
 
 .menu{
     background-color:white;
-    /*height: 80%;*/
+    height: 30%;
     width: 70%;
     border: 3px solid grey;
     z-index:1;
@@ -75,6 +75,9 @@ body{
 
 .menu_list{
     list-style-type: none;
+}
+.menuDiv{
+    display:inline-block;
 }
 #products{
     list-style-type: disclosure-closed;
