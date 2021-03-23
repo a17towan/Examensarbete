@@ -27,8 +27,15 @@ document.getElementById("hotChild").style="display:none";
 
 // Test the menu 'sortiment'
 $(document).on('click', '#products',(function(){
-  //$("#menuChild").slide("right");
   $("#menuParent").toggle('slide');
-  $("#menuChild").delay(500).effect('slide', { direction:'right'}, 500);
+  $("#menuChild").delay(420).effect('slide', { direction:'right'}, 500);
+
+}));
+
+// Back arrow first level
+$(document).on('click', '#backArrow',(function(){
+  console.log("hey");
+  $("#menuChild").toggle('slide', { direction:'right'});
+  $("#menuParent").delay(420).effect('slide', { direction:'left'}, 500);
 }));
 
