@@ -80,22 +80,26 @@ body{
     /*display:inline-table;*/
     width:100%;
 }
-#products{
-    list-style-type: disclosure-closed;
+#products:before{
+    content: '\2192'; margin-left: -20px; margin-right: 10px;
     list-style-position: inside;
 }
-#backArrow{
-    list-style-type: disclosure-closed;
+.item:before{
+    content: '\2192'; margin-left: -20px; margin-right: 10px;
     list-style-position: inside;
-    transform: scaleX(-1);
-    right:95%
 }
+.itemChild:before{
+    content: '\2192'; margin-left: -20px; margin-right: 10px;
+
+    list-style-position: inside;
+}
+
+#backArrow:before, #backArrowChild:before, #backArrowGrandchild:before{
+    content: '\21E6'; margin-left: -20px; margin-right: 10px;
+}
+
 ul{
     margin:0;
-}
-#backArrow{
-    /*display:none;*/
-    position:relative;
 }
 #ark.omOss .kontakt{
     display:none;
