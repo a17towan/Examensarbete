@@ -32,22 +32,22 @@
         <!-- The first level of submenus -->
         <div class="menuDiv">
             <ul class="menu_list" id="menuChild">
-                <li class="item" id="backArrow"></li>
-                <li class="itemChild" id="bread">Bröd</li>
-                <li class="itemChild" id="cakes">Tårtor</li>
-                <li class="itemChild" id="drinks">Dryck</li>
+                <li class="item" id="backArrow">Sortiment</li>
+                <li class="item" id="bread">Bröd</li>
+                <li class="item" id="cakes">Tårtor</li>
+                <li class="item" id="drinks">Dryck</li>
             </ul>
         </div>
         <div class="menuDiv">
             <ul class="menu_list"  id="menuChildBread">
-                <li class="item" id="backArrowChild"></li>
-                <li class="item" id="lightBread">Ljust bröd</li>
-                <li class="item" id="darkBread">Mörkt bröd</li>
+                <li id="backArrowChild">Bröd</li>
+                <li class="itemChild" id="lightBread">Ljust bröd</li>
+                <li class="itemChild" id="darkBread">Mörkt bröd</li>
             </ul>
         </div>
         <div class="menuDiv">
             <ul class="menu_list" id="menuChildCake">
-                <li class="item" id="backArrowChild"></li>
+                <li id="backArrowChild">Tårtor</li>
                 <li class="itemChild" id="cupcakes">Cupcakes</li>
                 <li class="itemChild" id="creamcakes">Gräddtårtor</li>
                 <li class="itemChild" id="icecreamcakes">Glasstårtor</li>
@@ -56,7 +56,7 @@
         </div>
         <div class="menuDiv">
             <ul class="menu_list"  id="menuChildDrink">
-                <li class="item" id="backArrowChild"></li>
+                <li id="backArrowChild">Dryck</li>
                 <li class="itemChild" id="coldDrinks">Kalla drycker</li>
                 <li class="itemChild" id="hotDrinks">Varma drycker</li>
             </ul>
@@ -64,48 +64,62 @@
         <!-- The second level of submenus -->
         <div class="menuDiv">
             <ul class="menu_list"  id="cupcakesChild">
-                <li class="item" id="backArrowGrandchild"></li>
-                <li class="grandchildItem" id="strawberryCup">Jordgubb</li>
-                <li class="grandchildItem" id="blueberryCup">Blåbär</li>
-                <li class="grandchildItem" id="vanillaCup">Vanilj</li>
+                <li id="backArrowGrandchild">Cupcakes</li>
+                <li class="itemGrandchild" id="strawberryCup">Jordgubb</li>
+                <li class="itemGrandchild" id="blueberryCup">Blåbär</li>
+                <li class="itemGrandchild" id="vanillaCup">Vanilj</li>
             </ul>
         </div>
         <div class="menuDiv">
             <ul class="menu_list"  id="creamChild">
-                <li class="item" id="backArrowGrandchild"></li>
-                <li class="grandchildItem" id="strawberryCr">Jordgubb</li>
-                <li class="grandchildItem" id="blueberryCr">Blåbär</li>
-                <li class="grandchildItem" id="pearCre">Päron</li>
+                <li id="backArrowGrandchild">Gräddtårtor</li>
+                <li class="itemGrandchild" id="strawberryCr">Jordgubb</li>
+                <li class="itemGrandchild" id="blueberryCr">Blåbär</li>
+                <li class="itemGrandchild" id="pearCre">Päron</li>
             </ul>
         </div>
         <div class="menuDiv">
             <ul class="menu_list"  id="iceChild">
-                <li class="item" id="backArrowGrandchild"></li>
-                <li class="grandchildItem" id="strawberryIce">Jordgubb</li>
-                <li class="grandchildItem" id="blueberryIce">Blåbär</li>
-                <li class="grandchildItem" id="pearIce">Päron</li>
+                <li id="backArrowGrandchild">Glasstårtor</li>
+                <li class="itemGrandchild" id="strawberryIce">Jordgubb</li>
+                <li class="itemGrandchild" id="blueberryIce">Blåbär</li>
+                <li class="itemGrandchild" id="pearIce">Päron</li>
             </ul>
         </div>
         <div class="menuDiv">
             <ul class="menu_list"  id="themeChild">
-                <li class="item" id="backArrowGrandchild"></li>
-                <li class="grandchildItem" id="princess">Prinsessor</li>
-                <li class="grandchildItem" id="superHero">Superhjältar</li>
-                <li class="grandchildItem" id="face">Ansiktstårta</li>
+                <li id="backArrowGrandchild">Tårtor med tema</li>
+                <li class="itemGrandchild" id="princess">Prinsessor</li>
+                <li class="itemGrandchild" id="superHero">Superhjältar</li>
+                <li class="itemGrandchild" id="face">Ansiktstårta</li>
             </ul>
         </div>
         <div class="menuDiv">
             <ul class="menu_list"  id="coldChild">
-                <li class="item" id="backArrowGrandchild"></li>
-                <li class="grandchildItem" id="iceTea">Isté</li>
-                <li class="grandchildItem" id="lemonade">Saft</li>
+                <li id="backArrowGrandchild">Kalla drycker</li>
+                <li class="itemGrandchild" id="iceTea">Isté</li>
+                <li class="itemGrandchild" id="lemonade">Saft</li>
             </ul>
         </div>
         <div class="menuDiv">
             <ul class="menu_list" id="hotChild">
-                <li class="item" id="backArrowGrandchild"></li>
-                <li class="grandchildItem" id="chocolate">Varm choklad</li>
-                <li class="grandchildItem" id="coffee">Kaffe</li>
+                <li id="backArrowGrandchild">Varma drycker</li>
+                <li class="itemGrandchild" id="chocolate">Varm choklad</li>
+                <li class="itemGrandchild" id="coffee">Kaffe</li>
+            </ul>
+        </div>
+        <div class="menuDiv">
+            <ul class="menu_list" id="lightBreadChild">
+                <li id="backArrowGrandchild">Ljust bröd</li>
+                <li class="itemGrandchild" id="baguette">Baguette</li>
+                <li class="itemGrandchild" id="scone">Scones</li>
+            </ul>
+        </div>
+        <div class="menuDiv">
+            <ul class="menu_list" id="darkBreadChild">
+                <li id="backArrowGrandchild">Mörkt bröd</li>
+                <li class="itemGrandchild" id="ryeSoftBread">Råglimpa</li>
+                <li class="itemGrandchild" id="ryeHardBread">Rågknäckebröd</li>
             </ul>
         </div>
     </div>

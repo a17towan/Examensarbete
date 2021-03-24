@@ -72,12 +72,16 @@ body{
     overflow:scroll;
     font-size: 70px;
 }
+#menuChild, #menuChildBread, #menuChildCake, #menuChildDrink, #cupcakesChild, #creamChild, #iceChild, #themeChild, 
+#coldChild, #hotChild, #lightBreadChild, #darkBreadChild{
+    display:none;
+}
 
 .menu_list{
     list-style-type: none;
 }
+
 .menuDiv{
-    /*display:inline-table;*/
     width:100%;
 }
 #products:before{
@@ -101,6 +105,16 @@ body{
 ul{
     margin:0;
 }
+
+/*The fonts for each menu level ---------*/
+.itemChild{
+    font-size:60px;
+}
+.itemGrandchild{
+    font-size:55px;
+}
+/*End fonts ---------*/
+
 #ark.omOss .kontakt{
     display:none;
 }
