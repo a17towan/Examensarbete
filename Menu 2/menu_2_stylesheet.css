@@ -98,7 +98,8 @@ body{
     list-style-position: inside;
 }
 
-#backArrow:before, #backArrowChild:before, #backArrowGrandchild:before{
+.backArrow:before, .backArrowChild:before, .backArrowCakes:before,
+.backArrowDrinks:before, .backArrowBread:before{
     content: '\21E6'; margin-left: -20px; margin-right: 10px;
 }
 

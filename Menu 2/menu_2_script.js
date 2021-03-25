@@ -22,8 +22,8 @@ function removeHearts(){
   var loop = document.getElementsByTagName("li");
   for(var i = 0; i < loop.length; i++){
     if(loop[i].childNodes[1] != null){
-      var hey = loop[i].childNodes[1];
-      loop[i].removeChild(hey);
+      var childs = loop[i].childNodes[1];
+      loop[i].removeChild(childs);
     }
   }
 }
@@ -33,11 +33,10 @@ $(document).on('click', '#products',(function(){
   this.appendChild(heart);
   $("#menuParent").toggle('slide');
   $("#menuChild").delay(420).effect('slide', { direction:'right'}, 500);
-
 }));
 
 // Back arrow first level ----------
-$(document).on('click', '#backArrow',(function(){
+$(document).on('click', '.backArrow',(function(){
   $("#menuChild").toggle('slide', { direction:'right'});
   $("#menuParent").delay(420).effect('slide', { direction:'left'}, 500);
 }));
@@ -64,26 +63,12 @@ $(document).on('click', '#drinks',(function(){
 }));
 
 // Back arrow second level ----------
-$(document).on('click', '#backArrowChild',(function(){
+$(document).on('click', '.backArrowChild',(function(){
   $("#menuChildBread").hide('slide', { direction:'right'});
   $("#menuChildCake").hide('slide', { direction:'right'});
   $("#menuChildDrink").hide('slide', { direction:'right'});
   $("#menuChild").delay(420).effect('slide', { direction:'left'}, 500);
   removeHearts();
-}));
-
-//Click on 'ljust bröd'
-$(document).on('click', '#lightBread',(function(){
-  this.appendChild(heart);
-  $("#menuChildBread").toggle('slide');
-  $("#lightBreadChild").delay(420).effect('slide', { direction:'right'}, 500);
-}));
-
-// Click on 'mörkt bröd'
-$(document).on('click', '#darkBread',(function(){
-  this.appendChild(heart);
-  $("#menuChildBread").toggle('slide');
-  $("#darkBreadChild").delay(420).effect('slide', { direction:'right'}, 500);
 }));
 
 // Click on 'cupcakes'
@@ -114,8 +99,38 @@ $(document).on('click', '#themecakes',(function(){
   $("#themeChild").delay(420).effect('slide', { direction:'right'}, 500);
 }));
 
+//Click on 'ljust bröd'
+$(document).on('click', '#lightBread',(function(){
+  this.appendChild(heart);
+  $("#menuChildBread").toggle('slide');
+  $("#lightBreadChild").delay(420).effect('slide', { direction:'right'}, 500);
+}));
+
+// Click on 'mörkt bröd'
+$(document).on('click', '#darkBread',(function(){
+  this.appendChild(heart);
+  $("#menuChildBread").toggle('slide');
+  $("#darkBreadChild").delay(420).effect('slide', { direction:'right'}, 500);
+}));
+
+//Click on 'kalla drycker'
+$(document).on('click', '#coldDrinks',(function(){
+  this.appendChild(heart);
+  $("#menuChildDrink").toggle('slide');
+  $("#coldChild").delay(420).effect('slide', { direction:'right'}, 500);
+}));
+
+// Click on 'varma drycker'
+$(document).on('click', '#hotDrinks',(function(){
+  this.appendChild(heart);
+  $("#menuChildDrink").toggle('slide');
+  $("#hotChild").delay(420).effect('slide', { direction:'right'}, 500);
+}));
+
+// ----------------------------------->
 // Back arrow 'tårtor' level ----------
-$(document).on('click', '#backArrowGrandchild',(function(){
+$(document).on('click', '.backArrowCakes',(function(){
+  this.appendChild(heart);
   $("#cupcakesChild").hide('slide', { direction:'right'});
   $("#creamChild").hide('slide', { direction:'right'});
   $("#iceChild").hide('slide', { direction:'right'});
@@ -123,3 +138,20 @@ $(document).on('click', '#backArrowGrandchild',(function(){
   $("#menuChildCake").delay(420).effect('slide', { direction:'left'}, 500);
   removeHearts();
 }));
+// Back arrow 'bread' level ----------
+$(document).on('click', '.backArrowBread',(function(){
+  this.appendChild(heart);
+  $("#lightBreadChild").hide('slide', { direction:'right'});
+  $("#darkBreadChild").hide('slide', { direction:'right'});
+  $("#menuChildBread").delay(420).effect('slide', { direction:'left'}, 500);
+  removeHearts();
+}));
+// Back arrow 'drink' level ----------
+$(document).on('click', '.backArrowDrinks',(function(){
+  this.appendChild(heart);
+  $("#coldChild").hide('slide', { direction:'right'});
+  $("#hotChild").hide('slide', { direction:'right'});
+  $("#menuChildDrink").delay(420).effect('slide', { direction:'left'}, 500);
+  removeHearts();
+}));
+// ----------------------------------->
