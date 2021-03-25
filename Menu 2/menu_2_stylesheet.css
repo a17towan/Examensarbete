@@ -72,6 +72,13 @@ body{
     overflow:scroll;
     font-size: 70px;
 }
+.rootMenuTitle{
+    font-size:70px;
+    background-color:#b53874;
+    color:white;
+    margin-left:-40px;
+    box-shadow: 0px 5px 9px lightgrey;
+}
 #menuChild, #menuChildBread, #menuChildCake, #menuChildDrink, #cupcakesChild, #creamChild, #iceChild, #themeChild, 
 #coldChild, #hotChild, #lightBreadChild, #darkBreadChild{
     display:none;
@@ -90,12 +97,17 @@ body{
 }
 .item:before{
     content: '\2192'; margin-left: -20px; margin-right: 10px;
+    margin-left:40px;
     list-style-position: inside;
 }
 .itemChild:before{
     content: '\2192'; margin-left: -20px; margin-right: 10px;
-
+    margin-left:40px;
     list-style-position: inside;
+}
+.itemGrandchild{
+    margin-left:40px;
+    font-size:55px;
 }
 
 .backArrow:before, .backArrowChild:before, .backArrowCakes:before,
@@ -111,9 +123,7 @@ ul{
 .itemChild{
     font-size:60px;
 }
-.itemGrandchild{
-    font-size:55px;
-}
+
 /*End fonts ---------*/
 
 #ark.omOss .kontakt{
