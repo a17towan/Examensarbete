@@ -1,24 +1,28 @@
-
 // Toggle menu up & down
-$( document ).ready(function() {
-    console.log( "ready!" );
-});
-
 $(document).on('click', '.navbar',(function(){
-  $(".menu").slideToggle("fast");
-    console.log("yo");
+    $(".menu").slideToggle("fast");
+}));
+
+// Close menu upon click on body
+$(document).on('click', '.ark',(function(){
+  $(".menu").slideUp("fast");
 }));
 
 // Menu arrow and hierarchy toggle
-var toggler = document.getElementsByClassName("caret");
+var toggler = document.getElementsByClassName("arrow");
 var i;
-
 for (i = 0; i < toggler.length; i++) {
   toggler[i].addEventListener("click", function() {
     this.parentElement.querySelector(".nested").classList.toggle("active");
-    this.classList.toggle("caret-down");
+    this.classList.toggle("arrow-down");
+    this.appendChild(heart);
   });
 }
+
+// Add HEART.svg to each end element
+var heart = document.createElement('img');
+heart.src ='HEART.svg';
+heart.className = 'heart';
 
 // Stop the menu from flashing grey
 document.getElementById("startMenu").addEventListener("click", noFlash);
