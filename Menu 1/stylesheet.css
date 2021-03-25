@@ -107,9 +107,16 @@ body{
     flex-basis:70%;
 }
 
+.rootMenuTitle{
+    font-size:70px;
+    background-color:#b53874;
+    color:white;
+    margin-left:-40px;
+    box-shadow: 0px 5px 9px lightgrey;
+}
+
 .menu ul li{
     list-style-type: none;
-    margin: 5px;
 }
 .menu ul li:active{
     background-color:lightgrey;
@@ -118,10 +125,7 @@ body{
 .rootMenu{
     font-size:70px;
 }
-.rootMenuTitle{
-    font-size:70px;
-    background-color:#BEFFEF;
-}
+
 .menu ul li:active{
     background-color:white;
 }
