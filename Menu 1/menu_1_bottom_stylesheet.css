@@ -20,6 +20,7 @@ body{
     background-color:white;
     border-bottom:1px solid grey;
     position:relative;
+    box-shadow: 1px 1px 10px black;
 }
 
 .brand{
@@ -31,11 +32,17 @@ body{
     width:100%;
 }
 .navbottom{
+    position:fixed;
+    bottom:0;
+    z-index:1;
+    width:100%;
     height:4%;
     margin:0;
     padding:10px;
     background-color:white;
     box-shadow: 2px 2px 10px black;
+    display: flex;
+    justify-content: center;
 }
 
 .bar{
@@ -51,22 +58,17 @@ body{
     width:10%;
 }
 
-.navlist{
-    float:left;
-}
-
 .menu{
     background-color:white;
     height: 70%;
     width: 85%;
-    border: 3px solid grey;
     z-index:1;
-    position: absolute;
+    position: fixed;
+    left:50%;
+    transform:translate(-50%);
     display:none;
-    top:12.3%;
-    border-top:none;
-    border-left:none;
-    box-shadow: 4px 10px 10px grey;
+    bottom:5%;
+    box-shadow: 0px -6px 10px grey;
     overflow:scroll;
 }
 
@@ -112,7 +114,9 @@ body{
     background-color:#b53874;
     color:white;
     margin-left:-40px;
+    margin-top: -3%;
     box-shadow: 0px 5px 9px lightgrey;
+    padding:10px;
 }
 
 .menu ul li{
