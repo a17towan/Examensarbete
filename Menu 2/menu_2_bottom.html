@@ -1,0 +1,175 @@
+<!Doctype HTML>
+<html lang="sv">
+<head>
+    <meta charset=utf-8>
+    <title>mobile menu 2 test</title>
+    <link rel="stylesheet" href="menu_2_bottom_stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navtop">  
+        <h1 class="brand">Bakeriee</h1>
+    </div>
+    <div class="navbottom">
+      <ul class="navbar">
+            <div class="hey"></div>
+            <div class="hey"></div>
+            <div class="hey"></div>
+        </ul>
+    </div>
+    <!-- The ground level of submenus -->
+    <div class="menu" id="menu">
+        <div class="menuDiv">
+            <ul class="menu_list" id="menuParent">
+                <li class="rootMenuTitle">Kategorier</li>
+                <li id="about">Om oss</li>
+                <li id="contact">Kontakt</li>
+                <li id="products">Sortiment</li>
+            </ul>
+        </div>
+        <!-- The first level of submenus -->
+        <div class="menuDiv">
+            <ul class="menu_list" id="menuChild">
+                <li class="backArrow">Sortiment</li>
+                <li class="item" id="bread">Bröd</li>
+                <li class="item" id="cakes">Tårtor</li>
+                <li class="item" id="drinks">Dryck</li>
+            </ul>
+        </div>
+        <div class="menuDiv">
+            <ul class="menu_list"  id="menuChildBread">
+                <li class="backArrowChild">Bröd</li>
+                <li class="itemChild" id="lightBread">Ljust bröd</li>
+                <li class="itemChild" id="darkBread">Mörkt bröd</li>
+            </ul>
+        </div>
+        <div class="menuDiv">
+            <ul class="menu_list" id="menuChildCake">
+                <li class="backArrowChild">Tårtor</li>
+                <li class="itemChild" id="cupcakes">Cupcakes</li>
+                <li class="itemChild" id="creamcakes">Gräddtårtor</li>
+                <li class="itemChild" id="icecreamcakes">Glasstårtor</li>
+                <li class="itemChild" id="themecakes">Tårtor med tema</li>
+            </ul>
+        </div>
+        <div class="menuDiv">
+            <ul class="menu_list"  id="menuChildDrink">
+                <li class="backArrowChild">Dryck</li>
+                <li class="itemChild" id="coldDrinks">Kalla drycker</li>
+                <li class="itemChild" id="hotDrinks">Varma drycker</li>
+            </ul>
+        </div>
+        <!-- The second level of submenus -->
+        <div class="menuDiv">
+            <ul class="menu_list"  id="cupcakesChild">
+                <li class="backArrowCakes">Cupcakes</li>
+                <li class="itemGrandchild" id="strawberryCup">Jordgubb</li>
+                <li class="itemGrandchild" id="blueberryCup">Blåbär</li>
+                <li class="itemGrandchild" id="vanillaCup">Vanilj</li>
+            </ul>
+        </div>
+        <div class="menuDiv">
+            <ul class="menu_list"  id="creamChild">
+                <li class="backArrowCakes">Gräddtårtor</li>
+                <li class="itemGrandchild" id="strawberryCr">Jordgubb</li>
+                <li class="itemGrandchild" id="blueberryCr">Blåbär</li>
+                <li class="itemGrandchild" id="pearCre">Päron</li>
+            </ul>
+        </div>
+        <div class="menuDiv">
+            <ul class="menu_list"  id="iceChild">
+                <li class="backArrowCakes">Glasstårtor</li>
+                <li class="itemGrandchild" id="strawberryIce">Jordgubb</li>
+                <li class="itemGrandchild" id="blueberryIce">Blåbär</li>
+                <li class="itemGrandchild" id="pearIce">Päron</li>
+            </ul>
+        </div>
+        <div class="menuDiv">
+            <ul class="menu_list"  id="themeChild">
+                <li class="backArrowCakes">Tårtor med tema</li>
+                <li class="itemGrandchild" id="princess">Prinsessor</li>
+                <li class="itemGrandchild" id="superHero">Superhjältar</li>
+                <li class="itemGrandchild" id="face">Ansiktstårta</li>
+            </ul>
+        </div>
+        <div class="menuDiv">
+            <ul class="menu_list"  id="coldChild">
+                <li class="backArrowDrinks">Kalla drycker</li>
+                <li class="itemGrandchild" id="iceTea">Isté</li>
+                <li class="itemGrandchild" id="lemonade">Saft</li>
+            </ul>
+        </div>
+        <div class="menuDiv">
+            <ul class="menu_list" id="hotChild">
+                <li class="backArrowDrinks">Varma drycker</li>
+                <li class="itemGrandchild" id="chocolate">Varm choklad</li>
+                <li class="itemGrandchild" id="coffee">Kaffe</li>
+            </ul>
+        </div>
+        <div class="menuDiv">
+            <ul class="menu_list" id="lightBreadChild">
+                <li class="backArrowBread">Ljust bröd</li>
+                <li class="itemGrandchild" id="baguette">Baguette</li>
+                <li class="itemGrandchild" id="scone">Scones</li>
+            </ul>
+        </div>
+        <div class="menuDiv">
+            <ul class="menu_list" id="darkBreadChild">
+                <li class="backArrowBread">Mörkt bröd</li>
+                <li class="itemGrandchild" id="ryeSoftBread">Råglimpa</li>
+                <li class="itemGrandchild" id="ryeHardBread">Rågknäckebröd</li>
+            </ul>
+        </div>
+    </div>
+    <!-- End menu -->
+    <!-- Home page -->
+     <div id="hemSida" class="ark">
+        <div class="box1">
+        	<img class="placeholder" src="placeholder.svg">
+        </div>
+        <div class="box2">
+        	 <img class="placeholder" src="placeholder.svg">
+        </div>
+        <div class="box3">
+        	 <img class="placeholder" src="placeholder.svg">
+        </div>
+
+    </div>
+</div>
+
+    <!-- About Us page -->
+    <div id="omOssSida" class="ark">
+        <div class="box0">
+            <h3>Om oss</h3>
+        </div>
+        <div class="box1">
+            <img class="placeholder" src="placeholder.svg">
+        </div>
+        <div class="box2">
+             <img class="placeholder" src="placeholder.svg">
+        </div>
+        <div class="box3">
+             <img class="placeholder" src="placeholder.svg">
+        </div>
+    </div>
+    <!-- Contact page -->
+    <div id="kontaktSida" class="ark">
+        <div class="box0">
+            <h3>Kontakta oss</h3>
+        </div>
+        <div class="box1">
+            <img class="placeholder" src="placeholder.svg">
+        </div>
+        <div class="box2">
+             <img class="placeholder" src="placeholder.svg">
+        </div>
+        <div class="box3">
+             <img class="placeholder" src="placeholder.svg">
+        </div>
+    </div>
+    <script src="menu_2_script.js"></script>
+</body>
+</html>
