@@ -4,37 +4,40 @@ var secondTime;
 var array = [];
 var text;
 
-// Timestamp when the page loads
 function initialTime(){
 	var today = new Date();
-	document.getElementById("timerWindow").innerHTML = today;
+	var test = today.valueOf()/1000;
 
+	var year = today.getFullYear();
+	var month = today.getDate();
+	var day = today.getDay();
+	var hour = today.getHours();
+	var minute = today.getMinutes();
+	var second = today.getSeconds();
+	var millisecond = today.getMilliseconds();
+
+	var time = year + '-' + month + '-' + day + ' ' + hour + ':' + minute + ':' + second + ':' + millisecond;
+	document.getElementById("timerWindow").innerHTML = 	time;
+	//document.getElementById("startTid").value = time;
 	firstTime=today;
+	document.getElementById("startTid").value = time;
 }
 
-// Timestamp when press the button "press me"
 function showTimeDiff(){
 	var timed = new Date();
-	document.getElementById("secondTimerWindow").innerHTML = timed; 
+	var test = timed.valueOf()/1000;
 
+	var year = timed.getFullYear();
+	var month = timed.getDate();
+	var day = timed.getDay();
+	var hour = timed.getHours();
+	var minute = timed.getMinutes();
+	var second = timed.getSeconds();
+	var millisecond = timed.getMilliseconds();
+
+	var time = year + '-' + month + '-' + day + ' ' + hour + ':' + minute + ':' + second + ':' + millisecond;
+	document.getElementById("secondTimerWindow").innerHTML = time; 
+	//document.getElementById("slutTid").value = time;
 	secondTime=timed;
-}
-
-// Calculate the difference in time
-function calculateDiff(){
-	var difference = (secondTime - firstTime) / 1000;
-	array.push(difference);
-	document.getElementById("diffWindow").innerHTML = difference;
-	console.log(array);
-
-	document.getElementById("arrayWindow").innerHTML="";
-	text = "<ul>";
-	for (var i=0; i < array.length; i++){
-		text += "<li>" + array[i] + "</li>";
-	}
-	text += "</ul>";
-
-	// Put the calculated value into the input box for "Number"
-	var final = difference.toString().split('.').join('');
-	document.getElementById("test1").value = final;
+	document.getElementById("slutTid").value = time;
 }
