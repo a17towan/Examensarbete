@@ -33,3 +33,8 @@ function noFlash(){
 // Single Page Application
 document.getElementById("omOssSida").style="display:none";
 document.getElementById("kontaktSida").style="display:none";
+
+// Start the test
+$(document).on('click', '.startBtn',(function(){
+  document.getElementById("overlay").style.display = "none";
+}));
