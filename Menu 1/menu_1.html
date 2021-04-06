@@ -4,13 +4,13 @@
     <meta charset=utf-8>
     <title>mobile menu test</title>
     <link rel="stylesheet" href="menu_1_stylesheet.css">
-    <script src="menu_1_script.js"defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="menu_1_script.js"defer></script>
     <script src="timer_and_database_JS.js"defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="setup()">
     <div class="overlay" id="overlay">
         <div class="innerOverlay">
             <h1>Starta testet</h1>
@@ -107,7 +107,7 @@
      <div id="hemSida" class="ark">
         <!-- Hidden form -->
         <form id="sendForm" action="" method="POST">
-            <!--<input type="text" name="deltagareID" placeholder="ID">-->
+            <input type="text" id="deltagareID" name="deltagareID" placeholder="ID" required>
             <input type="text" id="startTid" name="startTid" placeholder="Start tid" required>
             <input type="text" id ="slutTid" name="slutTid" placeholder="Slut tid" required>
             <input type="submit" id="submit" name="action" value="Submit">

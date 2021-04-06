@@ -17,14 +17,14 @@
 		echo $e->getMessage();
 	}
 
-	if(isset($_POST["startTid"])) {
+	if(isset($_POST["ID"])) {
 		try {
 			$values = [
-				//$_POST["deltagareID"],
+				$_POST["ID"],
 				$_POST["startTid"],
 				$_POST["slutTid"]
 			];
-			$sql = "INSERT INTO test2(startTid, slutTid) VALUES (?, ?);";
+			$sql = "INSERT INTO test2(ID, startTid, slutTid) VALUES (?, ?, ?);";
 			$stmt = $conn->prepare($sql);
 			$stmt->execute($values);
 			echo "Successfully inserted.";

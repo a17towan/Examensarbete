@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="setup()">
     <div class="overlay" id="overlay">
         <div class="innerOverlay">
             <h1>Starta testet</h1>
@@ -107,7 +107,7 @@
      <div id="hemSida" class="ark">
      	<!-- Hidden form -->
      	<form id="sendForm" action="" method="POST">
-            <!--<input type="text" name="deltagareID" placeholder="ID">-->
+            <input type="text" id="deltagareID" name="ID" placeholder="ID" required>
             <input type="text" id="startTid" name="startTid" placeholder="Start tid" required>
             <input type="text" id ="slutTid" name="slutTid" placeholder="Slut tid" required>
             <input type="submit" id="submit" name="action" value="Submit">
