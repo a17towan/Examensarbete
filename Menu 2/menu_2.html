@@ -5,11 +5,20 @@
     <title>mobile menu 2 test</title>
     <link rel="stylesheet" href="menu_2_stylesheet.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="menu_2_script.js" defer></script>
+    <script src="timer_and_database_JS.js" defer></script>
     <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="setup()">
+	<div class="overlay" id="overlay">
+        <div class="innerOverlay">
+            <h1>Starta testet</h1>
+            <h3>Klicka på knappen för att starta testet.</h3>
+            <button class="startBtn" onclick="initialTime()">Starta!</button>
+        </div>
+    </div>
     <div class="navtop">  
         <h1 class="brand">Bakeriee</h1>
     </div>
@@ -120,13 +129,20 @@
             <ul class="menu_list" id="darkBreadChild">
                 <li class="backArrowBread">Mörkt bröd</li>
                 <li class="itemGrandchild" id="ryeSoftBread">Råglimpa</li>
-                <li class="itemGrandchild" id="ryeHardBread">Rågknäckebröd</li>
+                <li class="itemGrandchild" id="ryeHardBread" onclick="targetAquired()">Rågknäckebröd</li>
             </ul>
         </div>
     </div>
     <!-- End menu -->
     <!-- Home page -->
      <div id="hemSida" class="ark">
+     	<!-- Hidden form -->
+        <form id="sendForm" action="" method="POST">
+            <input type="text" id="deltagareID" name="ID" placeholder="ID" required>
+            <input type="text" id="startTid" name="startTid" placeholder="Start tid" required>
+            <input type="text" id ="slutTid" name="slutTid" placeholder="Slut tid" required>
+            <input type="submit" id="submit" name="action" value="Submit">
+        </form>
         <div class="box1">
         	<img class="placeholder" src="placeholder.svg">
         </div>
@@ -170,6 +186,5 @@
              <img class="placeholder" src="placeholder.svg">
         </div>
     </div>
-    <script src="menu_2_script.js"></script>
 </body>
 </html>

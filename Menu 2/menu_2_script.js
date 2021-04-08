@@ -1,3 +1,12 @@
+ // Local storage attempt
+ function setup()
+ {
+    var userid=localStorage.getItem("userid");
+    if(userid==null) userid=Math.ceil(Math.random()*1000000);
+    localStorage.setItem("userid",userid);
+    console.log(userid);
+    document.getElementById("deltagareID").value = userid;
+ }
 
 // Toggle menu up & down
 $(document).on('click', '.navbar',(function(){
@@ -9,9 +18,32 @@ $(document).on('click', '.ark',(function(){
   
 }));
 
+// Time stamp on start the task
+function initialTime(){
+var today = new Date();
+
+var year = today.getFullYear();
+var month = today.getDate();
+var day = today.getDay();
+var hour = today.getHours();
+var minute = today.getMinutes();
+var second = today.getSeconds();
+var millisecond = today.getMilliseconds();
+
+var time = year + '-' + month + '-' + day + ' ' + hour + ':' + minute + ':' + second + ':' + millisecond;
+//var test = today + millisecond;
+document.getElementById("startTid").value = time;
+}
+
 // Single Page Application
 document.getElementById("omOssSida").style="display:none";
 document.getElementById("kontaktSida").style="display:none";
+
+// Start the test
+$(document).on('click', '.startBtn',(function(){
+document.getElementById("overlay").style.display = "none";
+}));
+
 
 // Remove hearts
 var heart = document.createElement('img');

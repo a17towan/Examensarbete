@@ -13,6 +13,35 @@ body{
     overflow:hidden;
 }
 
+.overlay{
+    top:0;
+    bottom:0;
+    border:white dotted 25px;
+    z-index: 2;
+    background-color:#FFBECE;
+    text-align:center;
+    position:fixed;
+}
+
+.overlay h1{
+    font-size:70px;
+}
+
+.startBtn{
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px #b53874e6;
+    width: auto;
+    height: auto;
+    padding: 10%;
+    border: none;
+    font-size: 80px;
+    font-weight: bold;
+}
+.innerOverlay{
+    margin-top:50%;
+}
+
 .navtop{
     height:6%;
     margin:0;
