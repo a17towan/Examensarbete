@@ -41,6 +41,9 @@ body{
 .innerOverlay{
     margin-top:50%;
 }
+#sendForm{
+    display:none;
+}
 
 .navtop{
     height:6%;
