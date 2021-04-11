@@ -25,8 +25,8 @@
 
     var result = year + '-' + month + '-' + day + ' ' + hour + ':' + minute + ':' + second + ':' + millisecond;
     document.getElementById("slutTid").value = result;
-
     document.getElementById("submit").click();
+    document.getElementById("continueBox").style ="display:block";
   }
   
   // Stop the form from reloading the page on submit
