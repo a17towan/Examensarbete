@@ -38,7 +38,7 @@
   var second = end.getSeconds();
   var millisecond = end.getMilliseconds();
 
-  var result = year + '-' + month + '-' + day + ' ' + hour + ':' + minute + ':' + second + ':' + millisecond;
+  var result = year + '-' + month + '-' + day + ' ' + hour + ':' + minute + ':' + second + '.' + millisecond;
   document.getElementById("slutTid").value = result;
   document.getElementById("submit").click();
   document.getElementById("continueBox").style ="display:block";

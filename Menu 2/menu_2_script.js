@@ -30,7 +30,7 @@ var minute = today.getMinutes();
 var second = today.getSeconds();
 var millisecond = today.getMilliseconds();
 
-var time = year + '-' + month + '-' + day + ' ' + hour + ':' + minute + ':' + second + ':' + millisecond;
+var time = year + '-' + month + '-' + day + ' ' + hour + ':' + minute + ':' + second + '.' + millisecond;
 //var test = today + millisecond;
 document.getElementById("startTid").value = time;
 }
