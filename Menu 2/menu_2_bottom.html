@@ -50,6 +50,7 @@
                 <li class="item" id="bread">Bröd</li>
                 <li class="item" id="cakes">Tårtor</li>
                 <li class="item" id="drinks">Dryck</li>
+                <li class="item" id="cookies">Kakor</li>
             </ul>
         </div>
         <div class="menuDiv">
@@ -75,6 +76,13 @@
                 <li class="itemChild" id="hotDrinks">Varma drycker</li>
             </ul>
         </div>
+        <div class="menuDiv">
+            <ul class="menu_list" id="menuChildCookie">
+                <li class="backArrowChild">Kakor</li>
+                <li class="itemChild" id="hardCookie">Hårda kakor</li>
+                <li class="itemChild" id="softCookie">Mjuka kakor</li>
+            </ul>
+        </div>
         <!-- The second level of submenus -->
         <div class="menuDiv">
             <ul class="menu_list"  id="cupcakesChild">
@@ -95,7 +103,7 @@
         <div class="menuDiv">
             <ul class="menu_list"  id="iceChild">
                 <li class="backArrowCakes">Glasstårtor</li>
-                <li class="itemGrandchild" id="strawberryIce" onclick="targetAquired()">Jordgubb</li>
+                <li class="itemGrandchild" id="strawberryIce">Jordgubb</li>
                 <li class="itemGrandchild" id="blueberryIce">Blåbär</li>
                 <li class="itemGrandchild" id="pearIce">Päron</li>
             </ul>
@@ -134,6 +142,22 @@
                 <li class="backArrowBread">Mörkt bröd</li>
                 <li class="itemGrandchild" id="ryeSoftBread">Råglimpa</li>
                 <li class="itemGrandchild" id="ryeHardBread">Rågknäckebröd</li>
+            </ul>
+        </div>
+        <div class="menuDiv">
+            <ul class="menu_list" id="hardCookieChild">
+                <li class="backArrowCookies">Hårda kakor</li>
+                <li class="itemGrandchild" id="caramelCookie">Kolakaka</li>
+                <li class="itemGrandchild" id="farmerCookie">Bondkaka</li>
+                <li class="itemGrandchild" id="oatCookie">Bondkaka</li>
+            </ul>
+        </div>
+         <div class="menuDiv">
+            <ul class="menu_list" id="softCookieChild">
+                <li class="backArrowCookies">Mjuka kakor</li>
+                <li class="itemGrandchild" id="carrotCookie" onclick="targetAquired()">Morotskaka</li>
+                <li class="itemGrandchild" id="loveCookie">Kärleksmums</li>
+                <li class="itemGrandchild" id="sugarCookie">Sockerkaka</li>
             </ul>
         </div>
     </div>

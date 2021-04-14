@@ -94,11 +94,19 @@ $(document).on('click', '#drinks',(function(){
   $("#menuChildDrink").delay(420).effect('slide', { direction:'right'}, 500);
 }));
 
+// Click on 'kakor'
+$(document).on('click', '#cookies', (function(){
+  this.appendChild(heart);
+  $("#menuChild").toggle('slide');
+  $("#menuChildCookie").delay(420).effect('slide', { direction:'right'}, 500);
+}))
+
 // Back arrow second level ----------
 $(document).on('click', '.backArrowChild',(function(){
   $("#menuChildBread").hide('slide', { direction:'right'});
   $("#menuChildCake").hide('slide', { direction:'right'});
   $("#menuChildDrink").hide('slide', { direction:'right'});
+  $("#menuChildCookie").hide('slide', { direction:'right'});
   $("#menuChild").delay(420).effect('slide', { direction:'left'}, 500);
   removeHearts();
 }));
@@ -159,6 +167,20 @@ $(document).on('click', '#hotDrinks',(function(){
   $("#hotChild").delay(420).effect('slide', { direction:'right'}, 500);
 }));
 
+// Click on 'hårda kakor'
+$(document).on('click', '#hardCookie', (function(){
+  this.appendChild(heart);
+  $("#menuChildCookie").toggle('slide');
+  $("#hardCookieChild").delay(420).effect('slide', { direction:'right'}, 500);
+}))
+
+// Click on 'mjuka kakor'
+$(document).on('click', '#softCookie', (function(){
+  this.appendChild(heart);
+  $("#menuChildCookie").toggle('slide');
+  $("#softCookieChild").delay(420).effect('slide', { direction:'right'}, 500);
+}))
+
 // ----------------------------------->
 // Back arrow 'tårtor' level ----------
 $(document).on('click', '.backArrowCakes',(function(){
@@ -184,6 +206,14 @@ $(document).on('click', '.backArrowDrinks',(function(){
   $("#coldChild").hide('slide', { direction:'right'});
   $("#hotChild").hide('slide', { direction:'right'});
   $("#menuChildDrink").delay(420).effect('slide', { direction:'left'}, 500);
+  removeHearts();
+}));
+//Back arrow 'cookies' level ----------
+$(document).on('click', '.backArrowCookies',(function(){
+  this.appendChild(heart);
+  $("#hardCookieChild").hide('slide', { direction:'right'});
+  $("#softCookieChild").hide('slide', { direction:'right'});
+  $("#menuChildCookie").delay(420).effect('slide', { direction:'left'}, 500);
   removeHearts();
 }));
 // ----------------------------------->

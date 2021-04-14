@@ -147,8 +147,8 @@ body{
     box-shadow: 0px 5px 9px lightgrey;
     padding:10px;
 }
-#menuChild, #menuChildBread, #menuChildCake, #menuChildDrink, #cupcakesChild, #creamChild, #iceChild, #themeChild, 
-#coldChild, #hotChild, #lightBreadChild, #darkBreadChild{
+#menuChild, #menuChildBread, #menuChildCake, #menuChildDrink, #menuChildCookie, #cupcakesChild, #creamChild, #iceChild, #themeChild, 
+#coldChild, #hotChild, #lightBreadChild, #darkBreadChild, #hardCookieChild, #softCookieChild{
     display:none;
 }
 
@@ -179,7 +179,7 @@ body{
 }
 
 .backArrow:before, .backArrowChild:before, .backArrowCakes:before,
-.backArrowDrinks:before, .backArrowBread:before{
+.backArrowDrinks:before, .backArrowBread:before, .backArrowCookies:before{
     content: '\21E6'; margin-left: -20px; margin-right: 10px;
 }
 
