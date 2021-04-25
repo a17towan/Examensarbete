@@ -35,3 +35,5 @@ foreign key (ID) references test1(deltagareID)
 
 SELECT * FROM test1;
 SELECT * FROM test2;
+SELECT * FROM test3;
+SELECT * FROM test4;
