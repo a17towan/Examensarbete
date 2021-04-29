@@ -21,6 +21,8 @@ body{
     background-color:#FFBECE;
     text-align:center;
     position:fixed;
+    left:0;
+    right:0;
 }
 
 .overlay h1{
